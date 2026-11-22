@@ -1,8 +1,9 @@
-FROM python:3-onbuild
+FROM python:3.11-slim
 
-# Copying source in current directory into the image
-# python:3-onbuild expects the source in /usr/src/app
-COPY . /usr/src/app
+WORKDIR /brevets
 
-# Commands in a list
-CMD ["python", "api.py"]
+COPY . /brevets
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "flask_brevets.py"]

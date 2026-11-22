@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved Controls</title>
+</head>
+<body>
+    <h1>Saved Control Times</h1>
+
+    <table border="1">
+        <tr>
+            <th>Distance (km)</th>
+            <th>Open</th>
+            <th>Close</th>
+        </tr>
+
+        {% for control in controls %}
+        <tr>
+            <td>{{ control.km }}</td>
+            <td>{{ control.open }}</td>
+            <td>{{ control.close }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/">Back to Calculator</a></p>
+</body>
+</html>
