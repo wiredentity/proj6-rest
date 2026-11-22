@@ -11,6 +11,8 @@ The calculator is based on the [RUSA brevet time calculator](https://rusa.org/oc
 
 ## Running the Project
 
+> Make sure `credentials.ini` is located in laptop folder before running
+
 From the `DockerRestAPI` directory, run:
 
 ```bash
